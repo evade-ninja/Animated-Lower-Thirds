@@ -24,7 +24,7 @@ This project is based on [Lower thirds in HTML/CSS](https://obsproject.com/forum
 Unfortunately, OBS doesn't support browser panels on MacOs. It only works on Windows.
 
 ## Usage 
-See previus features: https://youtu.be/cQ0_1GwpwB0
+See previous features: https://youtu.be/cQ0_1GwpwB0
 
 ## Support
 You can find all videotutorials on this [Youtube Channel](https://www.youtube.com/channel/UCUYiOIl-DHn8B1eRzUfDyyw)
@@ -37,3 +37,8 @@ If you like the extension and you want to support the development - please consi
 
 ## License
 The Animated Lower Thirds source code is made available under the [MIT license](https://github.com/noeal-dac/Animated-Lower-Thrids/blob/master/LICENSE).
+
+## About this fork
+- Removed vertical bar between logo/text (I don't use a logo and didn't want a vertical bar)
+- Changed from slider to fader (Sliders were too distracting for my needs)
+- I added an additional font from Google, although its name seems to only show up as "M"

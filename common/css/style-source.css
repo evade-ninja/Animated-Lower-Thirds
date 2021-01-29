@@ -14,6 +14,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
 
 :root {
 	--alt-1-animation-time: 4s;
@@ -59,74 +61,86 @@ body {
 @keyframes animation-left-logo {
 	0% {
 		opacity: 0;
-		right: -30%;
 	}
-	55% {
-		opacity: 0;
-		right: -30%;
+	25%{
+		opactiy: 0.25;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
 	}
 	100% {
 		opacity: 1;
-		right: 0;
 	}
 }
 @keyframes animation-left-slash {
-	0% {
+		0% {
 		opacity: 0;
-		transform: translate3d(10em, 0, 0);
 	}
-	23% {
-		opacity: 0;
-		transform: translate3d(10em, 0, 0);
+	25%{
+		opactiy: 0.25;
 	}
-		50% {
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
+	}
+	100% {
 		opacity: 1;
-	}
-		75% {
-		transform: translate3d(0, 0, 0);
-	}
-		100% {
-		transform: translate3d(0, 0, 0);
 	}
 }
 @keyframes animation-left-background {
-	0% {
-		width: 0;
-		padding-left: 0;
-		padding-right: 0;
-		border: 0 solid #00000000;
+		0% {
+		opacity: 0;
 	}
-	30% {
-		width: 0;
-		padding-left: 0;
-		padding-right: 0;
-		border: 0 solid #00000000;
-	}	
+	25%{
+		opactiy: 0.25;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
+	}
 	100% {
-		width: calc(100% + 2em);
-		/* width: 100% */
+		opacity: 1;
 	}
 }
 @keyframes animation-left-text-1 {
-	0% {
-		left: -102%;
+		0% {
+		opacity: 0;
 	}
-	45% {
-		left: -102%;
+	25%{
+		opactiy: 0.25;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
 	}
 	100% {
-		left: 0;
+		opacity: 1;
 	}
 }
 @keyframes animation-left-text-2 {
-	0% {
-		left: -102%;
+		0% {
+		opacity: 0;
+	}
+	25%{
+		opactiy: 0.25;
 	}
 	50% {
-		left: -102%;
+		opacity: 0.5;
+	}
+	75% {
+		opacity: 0.75;
 	}
 	100% {
-		left: 0;
+		opacity: 1;
 	}
 }
 
@@ -335,11 +349,13 @@ body {
 
 /*Logo animation*/
 .animation-in > div:first-child img {
-	animation: cubic-bezier(0.19, 0.76, 0.32, 1) 1 normal both;
+	/*animation: cubic-bezier(0.19, 0.76, 0.32, 1) 1 normal both;*/
+	animation: linear 1 normal both;
 	/*animation-duration: var(--animation-time);*/
 }
 .animation-out > div:first-child img {
-	animation: cubic-bezier(0.19, 0.76, 0.32, 1) 1 reverse both;
+	/*animation: cubic-bezier(0.19, 0.76, 0.32, 1) 1 reverse both;*/
+	animation: linear 1 reverse both;
 	/*animation-duration: var(--animation-time);*/
 }
 #lower-third-1.animation-in > div:first-child img,
@@ -378,12 +394,14 @@ body {
 .animation-in > div:nth-child(1),
 .animation-in > div:nth-child(2),
 .animation-in > div:nth-child(4) {
-	animation: cubic-bezier(0.19, 0.76, 0.32, 1) 1 normal both;
+	/*animation: cubic-bezier(0.19, 0.76, 0.32, 1) 1 normal both;*/
+	animation: linear 1 normal both;
 }	
 .animation-out > div:nth-child(1),
 .animation-out > div:nth-child(2),
 .animation-out > div:nth-child(4) {
-	animation: cubic-bezier(0.19, 0.76, 0.32, 1) 1 reverse both;
+	animation: linear 1 reverse both;
+	/*animation: cubic-bezier(0.19, 0.76, 0.32, 1) 1 reverse both;*/
 }
 #lower-third-1.animation-in > div:nth-child(1), #lower-third-1.animation-in > div:nth-child(2), #lower-third-1.animation-in > div:nth-child(4),
 #lower-third-1.animation-out > div:nth-child(1), #lower-third-1.animation-out > div:nth-child(2), #lower-third-1.animation-out > div:nth-child(4) {
@@ -430,11 +448,13 @@ body {
 /*Texts animation*/
 .animation-in > .text-content > div:first-child div,
 .animation-in > .text-content > div:nth-child(2) div {
-	animation: cubic-bezier(0.19, 0.76, 0.32, 1) 1 normal both;
+	animation: linear 1 normal both;
+	/*animation: cubic-bezier(0.19, 0.76, 0.32, 1) 1 normal both;*/
 }
 .animation-out > .text-content > div:first-child div,
 .animation-out > .text-content > div:nth-child(2) div {
-	animation: cubic-bezier(0.19, 0.76, 0.32, 1) 1 reverse both;
+	/*animation: cubic-bezier(0.19, 0.76, 0.32, 1) 1 reverse both;*/
+	animation: linear 1 reverse both;
 }
 #lower-third-1.animation-in > .text-content > div:first-child div, #lower-third-1.animation-in > .text-content > div:nth-child(2) div,
 #lower-third-1.animation-out > .text-content > div:first-child div, #lower-third-1.animation-out > .text-content > div:nth-child(2) div {
